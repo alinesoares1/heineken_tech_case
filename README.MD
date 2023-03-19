@@ -40,6 +40,6 @@ usage: docker build -t heinekenapp
 then: docker run -p 8501:8501 heinekenapp
 ```
 
-## Train
+## Modeling and Training
 
-See all the training steps **[here](https://github.com/alinesoares1/heineken_tech_case/blob/master/model/predicting_beer_color.ipynb)**.
+See all the modeling and training steps **[here](https://github.com/alinesoares1/heineken_tech_case/blob/master/model/predicting_beer_color.ipynb)**.
