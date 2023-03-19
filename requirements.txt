@@ -1,0 +1,18 @@
+altair @ file:///tmp/build/80754af9/altair_1599835197802/work
+autopep8 @ file:///opt/conda/conda-bld/autopep8_1650463822033/work
+flake8 @ file:///opt/conda/conda-bld/flake8_1648129545443/work
+lightgbm @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d26abt78jq/croot/lightgbm_1677766496498/work
+mypy @ file:///tmp/build/80754af9/mypy_1624522079895/work
+mypy-extensions==0.4.3
+numpy==1.19.5
+pandas==1.4.3
+patsy==0.5.3
+pep8==1.7.1
+pyarrow==8.0.0
+pycaret==2.3.10
+scikit-learn==0.23.2
+scikit-plot==0.3.7
+scipy==1.5.4
+seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
+statsmodels==0.13.5
+streamlit @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_772487d1-bfbf-4b89-a425-e2900b940b1flihd3sr0/croots/recipe/streamlit_1657914744543/work
