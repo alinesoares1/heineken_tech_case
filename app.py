@@ -3,16 +3,32 @@ import streamlit as st
 import pandas as pd
 
 
-def predict(model, df):
-    predictions_df = predict_model(estimator=model, data=df)
+def predict(model, input_df):
+    """
+
+    Prediction function used to predict the values based on the input data.
+        Parameters
+        ----------
+                model: Pickle file
+                       Pickle file with the trained model object.
+                df : DataFrame
+                     Pandas DataFrame.
+
+        Returns
+        -------
+                Predictions
+                    The predict_model function returns prediction_label
+                    as new column to the input dataframe.
+    """
+    predictions_df = predict_model(estimator=model, data=input_df)
     return predictions_df['Label'][0]
 
 
 st.set_page_config(
-    layout="wide", page_icon='images/heineken1.jpeg',
+    layout="wide", page_icon='assets/heineken1.jpeg',
     page_title='Heineken Brewery')
 
-st.image('images/heineken_header.jpeg', use_column_width=True)
+st.image('assets/heineken_header.jpeg', use_column_width=True)
 
 st.header("Beer Color Predictor for Heineken Brewery 🍻 ")
 
@@ -26,6 +42,12 @@ st.write('This is a web app to predict the Heineken beer color based on\
 
 
 def run():
+    """
+
+    Run function is used to configure streamlit selectors
+    into online and batch predictions.
+
+    """
 
     add_selectbox = st.sidebar.selectbox(
         "How would you like to predict?",
