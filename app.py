@@ -17,7 +17,7 @@ st.image('images/heineken_header.jpeg', use_column_width=True)
 
 st.header("Beer Color Predictor for Heineken Brewery 🍻 ")
 
-model = load_model('beer-color-pipeline2')
+model = load_model('model/beer-color-pipeline2')
 
 
 #st.title('Beer Color Predictor for Heineken Brewery')
