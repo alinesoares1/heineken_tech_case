@@ -9,7 +9,7 @@ Currently, 7% of Heineken's beer brews do not satisfy the requirements to achiev
 For this reason, this project aims to generate a machine learning model that use some historical heineken brewering data to predict the beer color for Heineken Brewery.
 
 **Project Structure**:
-<pre>
+```
 ├── .streamlit/
 │   └── config.toml
 ├── data/
@@ -27,7 +27,8 @@ For this reason, this project aims to generate a machine learning model that use
 ├── README.MD
 ├── app.py
 └── requirements.txt
-<pre>
+```
+
 ## Usage
 
 Execute the streamlit app module using the Dockerfile.
