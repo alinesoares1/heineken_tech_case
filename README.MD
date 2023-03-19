@@ -1,4 +1,4 @@
-<img src="https://github.com/alinesoares1/heineken_tech_case/blob/master/images/brewing_process.png">
+<img src="https://github.com/alinesoares1/heineken_tech_case/blob/master/assets/heinekenapp.png">
 
 # Predicting Beer Color for Heineken Brewery
 
