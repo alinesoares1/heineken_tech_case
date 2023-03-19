@@ -1,7 +1,6 @@
 from pycaret.regression import load_model, predict_model
 import streamlit as st
 import pandas as pd
-import numpy as np
 
 
 def predict(model, df):
@@ -20,7 +19,6 @@ st.header("Beer Color Predictor for Heineken Brewery 🍻 ")
 model = load_model('model/beer-color-pipeline2')
 
 
-#st.title('Beer Color Predictor for Heineken Brewery')
 st.write('This is a web app to predict the Heineken beer color based on\
          several features that you can see in the sidebar. Please adjust the\
          value of each feature. After that, click on the Predict button at the bottom to\
@@ -124,8 +122,9 @@ def run():
                     'second_malt_amount': second_malt_amount, 'mt_temperature': mt_temperature,
                     'mt_time': mt_time, 'wk_temperature': wk_temperature, 'woc_time': woc_time,
                     'wk_steam': wk_steam, 'wk_time': wk_time, 'whp_transfer_time': whp_transfer_time,
-                    'ph': ph, 'total_cold_wort': total_cold_wort, 'extract': extract, 'whp_rest_time': whp_rest_time,
-                    'roast_color': roast_color, 'first_malt_color': first_malt_color, 'second_malt_color': second_malt_color
+                    'ph': ph, 'total_cold_wort': total_cold_wort, 'extract': extract,
+                    'whp_rest_time': whp_rest_time, 'roast_color': roast_color,
+                    'first_malt_color': first_malt_color, 'second_malt_color': second_malt_color
                     }
 
         features_df = pd.DataFrame([features])
@@ -137,7 +136,7 @@ def run():
             prediction = predict(model, features_df)
 
             st.success(
-                'Based on feature values, the beer color is {:.2f}'.format(prediction))
+                f'Based on feature values, the beer color is {prediction:.2f}')
 
     if add_selectbox == 'Batch':
 
